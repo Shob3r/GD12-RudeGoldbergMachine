@@ -71,4 +71,9 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
+# Jetbrains IDE .idea folder
 .idea/
+
+# Blender .blend1 and .blend1.meta files
+*.blend1
+*.blend1.meta
