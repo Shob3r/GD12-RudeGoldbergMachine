@@ -38,6 +38,7 @@ public class PlayerCamera : MonoBehaviour
         OnPlayerLook(experienceCamera.Default.Look.ReadValue<Vector2>());
     }
 
+    
     private void OnPlayerLook(Vector2 lookMouseDelta)
     {
         // Thanks to Phind AI (GPT) for doing the Quaternion stuff because I can't wrap my head around it yet
