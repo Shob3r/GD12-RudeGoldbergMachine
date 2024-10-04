@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
-public class PlayAudioOnCollision : BallHitActions
+public class PlayAudioOnCollision : ObjectCollisionActions
 {
     public AudioClip soundEffect;
     private AudioSource effectSource;
