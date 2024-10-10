@@ -20,6 +20,7 @@ public class PlaySoundEffectsOnCollision : ObjectCollisionActions
 
     protected override void OnCollisionEnter(Collision other)
     {
+        base.OnCollisionEnter(other);
         if (playMultiple || timesPlayed == 0)
         {
             timesPlayed++;

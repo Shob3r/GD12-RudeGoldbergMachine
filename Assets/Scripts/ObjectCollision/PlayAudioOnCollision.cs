@@ -9,9 +9,8 @@ public class PlayAudioOnCollision : ObjectCollisionActions
     public AudioClip soundEffect;
     private AudioSource effectSource;
 
-    public bool playMultiple = false;
-
-    private byte timesHit = 0;
+    public int timesToPlay = 2;
+    private short timesHit = 0;
 
     private void Start()
     {
@@ -20,7 +19,9 @@ public class PlayAudioOnCollision : ObjectCollisionActions
     
     protected override void OnCollisionEnter(Collision other)
     {
-        if (timesHit == 0 || playMultiple)
+        base.OnCollisionEnter(other);
+        
+        if (timesToPlay >= timesHit)
         {
             timesHit++;
             effectSource.PlayOneShot(soundEffect);

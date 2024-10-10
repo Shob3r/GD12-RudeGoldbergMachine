@@ -6,6 +6,8 @@ public class ApplyForceOnCollision : ObjectCollisionActions
     public float targetAcceleration = 5.5f; // I would assume that that this is represented as m/s
     protected override void OnCollisionEnter(Collision other)
     {
+        base.OnCollisionEnter(other);
+        
         GameObject collidedGameObject = other.gameObject;
         if (DoesColliderHaveRigidBody(collidedGameObject))
         {
