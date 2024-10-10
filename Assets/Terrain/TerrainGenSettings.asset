@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39d40356c24708a499f1be9fd13bc0db, type: 3}
+  m_Name: TerrainGenSettings
+  m_EditorClassIdentifier: 
+  TerrainWidth: 75
+  TerrainLength: 75
+  TerrainHeight: 250
+  StartPosition: {x: 0, y: 0, z: 0}
+  TilesX: 1
+  TilesZ: 1
+  GroupID: 0
+  AutoConnect: 1
+  DrawInstanced: 1
+  PixelError: 5
+  BaseMapDistance: 1000
+  BaseTextureResolution: 1024
+  ControlTextureResolution: 512
+  DetailResolution: 1024
+  DetailResolutionPerPatch: 32
+  MaterialOverride: {fileID: 2100000, guid: 9616c5c6d64d66244bb2ef69642efdd4, type: 2}
+  HeightmapResolution: 513
+  EnableHeightmapImport: 1
+  UseGlobalHeightmap: 0
+  HeightmapMode: 1
+  UseRawFile: 0
+  HeightmapWidth: 0
+  HeightmapHeight: 0
+  HeightmapRemapMax: 250
+  HeightmapRemapMin: 0
+  HeightmapDepth: 1
+  FlipMode: 0
+  BatchHeightmapFolder: C:/Users/andre/Desktop/rude-goldberg/Assets/Terrain
+  GlobalHeightmapPath: 
+  TileHeightmapPaths:
+  - 
+  EnableGizmo: 0
+  EditGizmoBounds: 0
+  TerrainAssetDirectory: Assets/Terrain/
+  EnableGuid: 1
+  EnableClearExistingData: 0
+  EnableLightingAutoBake: 1
+  PresetPath: 
+  ShowGroupSettings: 1
+  ShowHeightmapSettings: 1
+  ShowGizmoSettings: 0
+  ShowOptions: 1

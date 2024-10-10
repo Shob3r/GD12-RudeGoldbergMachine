@@ -3,12 +3,13 @@
 public class PlayAnimationOnCollision : ObjectCollisionActions
 {
     public Animator collidedObjectAnimator;
+    public string animationTriggerName = "Triggered";
 
     protected override void OnCollisionEnter(Collision other)
     {
         if (collidedObjectAnimator != null)
         {
-            collidedObjectAnimator.Play("CannonFire");
+            collidedObjectAnimator.SetBool(animationTriggerName, true);
         }
     }
 }
