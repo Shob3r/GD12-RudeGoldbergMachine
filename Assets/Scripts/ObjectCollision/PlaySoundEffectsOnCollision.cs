@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -8,10 +6,10 @@ using Random = UnityEngine.Random;
 public class PlaySoundEffectsOnCollision : ObjectCollisionActions
 {
     public List<AudioClip> collisionSfx = new();
+    public bool playMultiple;
 
     private AudioSource collisionSource;
-    public bool playMultiple = false;
-    private int timesPlayed = 0;
+    private int timesPlayed;
 
     private void Start()
     {

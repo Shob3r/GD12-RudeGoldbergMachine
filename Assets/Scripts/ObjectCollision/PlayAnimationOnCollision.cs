@@ -8,9 +8,6 @@ public class PlayAnimationOnCollision : ObjectCollisionActions
     protected override void OnCollisionEnter(Collision other)
     {
         base.OnCollisionEnter(other);
-        if (collidedObjectAnimator != null)
-        {
-            collidedObjectAnimator.SetBool(animationTriggerName, true);
-        }
+        if (collidedObjectAnimator != null) collidedObjectAnimator.SetBool(animationTriggerName, true);
     }
 }

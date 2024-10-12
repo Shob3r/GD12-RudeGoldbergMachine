@@ -1,14 +1,12 @@
-using System;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class ToggleGameObjectOnCollision : ObjectCollisionActions
 {
     public GameObject[] gamObjectsToToggle;
     public bool toggleOnce = true;
 
-    private bool hasToggled = false;
-    
+    private bool hasToggled;
+
 
     protected override void OnCollisionEnter(Collision other)
     {
@@ -16,10 +14,7 @@ public class ToggleGameObjectOnCollision : ObjectCollisionActions
         if (!hasToggled)
         {
             if (toggleOnce) hasToggled = true;
-            foreach (GameObject g in gamObjectsToToggle)
-            {
-                g.SetActive(!g.gameObject.activeSelf);
-            }
+            foreach (var g in gamObjectsToToggle) g.SetActive(!g.gameObject.activeSelf);
         }
     }
 }

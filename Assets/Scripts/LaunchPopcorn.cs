@@ -14,7 +14,7 @@ public class LaunchPopcorn : MonoBehaviour
 
     public void AnimatorLaunchPopcorn()
     {
-        Vector3 normalizedLaunchDirection = launchDirection.normalized;
+        var normalizedLaunchDirection = launchDirection.normalized;
         popcornRigidBody.AddForce(normalizedLaunchDirection * forceToApply, ForceMode.Impulse);
     }
 }
