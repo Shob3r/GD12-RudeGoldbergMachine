@@ -21,7 +21,7 @@ public class PlayAudioOnCollision : ObjectCollisionActions
     {
         base.OnCollisionEnter(other);
         
-        if (timesToPlay >= timesHit)
+        if (timesHit < timesToPlay)
         {
             timesHit++;
             effectSource.PlayOneShot(soundEffect);
